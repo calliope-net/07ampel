@@ -1,5 +1,7 @@
 function Ampelsteuerung () {
-	
+    basic.pause(500)
+    AAmpel(0, 0, 1)
+    FAmpel(1, 0)
 }
 function FAmpel (Red: number, Green: number) {
     pins.digitalWritePin(DigitalPin.C16, Red)
